@@ -11,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   font-weight: 300;
   // font-family: "Open Sans", sans-serif;
@@ -40,6 +40,10 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-size: 13px;
 }
 
 a {
