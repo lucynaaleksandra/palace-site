@@ -1,15 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,70");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 @import "./layout/index";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 0;
   width: 100vw;
   min-height: 100vh;
+  font-weight: 300;
   // font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
+  color: $color-primary;
 }
 
 h1 {
