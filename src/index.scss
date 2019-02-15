@@ -93,6 +93,12 @@ a {
     border: 1px solid $color-white;
   }
 
+  &--orange-light {
+    background: $color-orange-light;
+    color: $color-orange;
+    border: 1px solid $color-orange-light;
+  }
+
   &--white {
     background: $color-white;
     color: $color-secondary;

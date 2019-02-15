@@ -1,6 +1,4 @@
 .la-future {
-  background: plum;
-
   .la-future__header {
     display: flex;
     flex-direction: column;
@@ -21,6 +19,11 @@
     .la-future__btn {
       display: flex;
       flex-direction: row;
+      padding-top: 30px;
+
+      .la-btn--primary {
+        padding-left: 15px;
+      }
     }
   }
 
@@ -40,9 +43,10 @@
       flex-direction: row;
       height: 700px;
       background-image: url("asset/inter02.jpg");
-      background-size: contain;
+      background-size: cover;
       background-position: left;
       background-repeat: no-repeat;
+      position: relative;
 
       @include responsive-sm {
         height: 500px;
@@ -54,6 +58,26 @@
         background-position: center;
         order: 2;
       }
+
+      .la-future__icon-1,
+      .la-future__icon-2,
+      .la-future__icon-3 {
+        width: 50px;
+        height: 50px;
+        background: $color-primary;
+        position: absolute;
+        right: -25px;
+      }
+      .la-future__icon-1 {
+        top: 25%;
+      }
+      .la-future__icon-2 {
+        top: 50%;
+        box-shadow: $box-shadow;
+      }
+      .la-future__icon-3 {
+        top: 75%;
+      }
     }
 
     > div {
@@ -61,8 +85,10 @@
     }
 
     .la-future__content {
-      background: palegoldenrod;
       padding: 0 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       @include responsive-sm {
         padding: 0 100px 50px 100px;
