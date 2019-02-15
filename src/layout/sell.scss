@@ -10,6 +10,7 @@
     margin: 0 auto;
     width: 80%;
     padding: 150px 100px 0 100px;
+    @include will-animate-y;
 
     @include responsive-sm {
       padding: 50px;
@@ -75,6 +76,7 @@
       background-size: contain;
       background-position: left;
       background-repeat: no-repeat;
+      @include will-animate-y(500ms);
 
       @include responsive-sm {
         order: 1;
@@ -94,6 +96,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 200px 0 0;
+    @include will-animate-y(1000ms);
 
     @include responsive-md {
       padding: 50px 0 50px 100px;
