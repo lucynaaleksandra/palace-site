@@ -108,12 +108,22 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 50px;
 
     @include responsive-xs {
       flex-direction: column;
       align-items: center;
       font-size: 10px;
+    }
+
+    button {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        @include hover-scale-01;
+      }
     }
   }
 }

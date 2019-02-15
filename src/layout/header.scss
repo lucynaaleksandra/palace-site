@@ -85,7 +85,7 @@ header {
       cursor: pointer;
 
       opacity: 0;
-      animation: scale-up 3000ms $easeOutBack 2200ms forwards;
+      animation: scale-up 4000ms $easeOutBack 2100ms forwards;
 
       @include responsive-sm {
         top: 90%;
