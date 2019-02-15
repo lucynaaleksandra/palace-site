@@ -1,0 +1,87 @@
+.la-service {
+  background: plum;
+  min-height: 70vh;
+  display: flex;
+  position: relative;
+
+  @include responsive-sm {
+    flex-direction: column;
+  }
+  @include responsive-xs {
+    flex-direction: column;
+  }
+
+  > div {
+    flex: 0 0 50%;
+  }
+
+  .la-service__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+
+    @include responsive-sm {
+      padding-bottom: 25px;
+    }
+    @include responsive-xs {
+      padding: 50px;
+    }
+
+    h4 {
+      padding-bottom: 50px;
+    }
+  }
+
+  .la-service__img {
+    height: 700px;
+    background-image: url("asset/inter03.jpg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    @include responsive-sm {
+      background-position: center;
+      height: 500px;
+    }
+    @include responsive-xs {
+      background-position: center;
+      height: 500px;
+    }
+  }
+
+  .la-service__shape {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    background: $color-white;
+    border: 1px solid $color-white;
+    font-size: 13px;
+
+    position: absolute;
+    bottom: 10%;
+    right: 430px;
+
+    @include responsive-sm {
+      bottom: 5%;
+      right: 140px;
+    }
+    @include responsive-xs {
+      bottom: 0;
+      right: 0;
+    }
+
+    i {
+      font-size: 15px;
+      color: $color-primary;
+      border-radius: 50%;
+      border: 1px solid $color-primary;
+      margin-bottom: 10px;
+    }
+  }
+}

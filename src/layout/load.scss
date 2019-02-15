@@ -1,0 +1,87 @@
+.la-load {
+  background: cadetblue;
+  display: flex;
+  padding: 100px;
+
+  @include responsive-sm {
+    flex-direction: column;
+    padding: 0 100px;
+  }
+  @include responsive-xs {
+    flex-direction: column;
+    padding: 0 25px 25px 25px;
+  }
+
+  > div {
+    flex: 0 0 50%;
+  }
+
+  .la-load__img {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    background-image: url("asset/inter01.jpg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    @include responsive-sm {
+      order: 1;
+      background-position: center;
+      height: 500px;
+    }
+    @include responsive-xs {
+      order: 1;
+      background-position: center;
+      height: 500px;
+    }
+  }
+
+  .la-load__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+
+    @include responsive-xs {
+      padding: 50px;
+    }
+
+    .la-load__gratis-btn {
+      padding: 30px 0;
+    }
+
+    .la-load__input {
+      margin-top: 30px;
+      position: relative;
+
+      input {
+        width: 250px;
+        padding: 12px 20px;
+        // border-radius: 20px;
+        border: none;
+        outline: none;
+        background: $color-grey-light;
+      }
+      .material-icons {
+        padding: 4px;
+        border-radius: 50%;
+        // background: $color-orange;
+        // color: $color-white;
+
+        position: absolute;
+        top: 7px;
+        left: 220px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+//   button {
+//     margin: 0;
+//     position: absolute;
+//     top: 0;
+//     right: -15px;
+//   }
+// }

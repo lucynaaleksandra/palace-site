@@ -1,0 +1,99 @@
+header {
+  background: cadetblue;
+  display: flex;
+
+  @include responsive-sm {
+    flex-direction: column;
+  }
+  @include responsive-xs {
+    flex-direction: column;
+  }
+
+  > div {
+    flex: 0 0 50%;
+  }
+
+  .la-header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+
+    @include responsive-sm {
+      order: 1;
+    }
+    @include responsive-xs {
+      order: 1;
+      padding: 50px;
+    }
+
+    .la-header__btn {
+      margin-top: 30px;
+      display: flex;
+
+      i {
+        border: 1px solid $color-primary;
+        border-radius: 50%;
+        font-size: 12px;
+        padding: 3px;
+      }
+      button {
+        border: none;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .la-header-imgs {
+    position: relative;
+    height: 600px;
+    background-image: url("asset/house-1.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    @include responsive-sm {
+      background-position: center;
+      order: 0;
+    }
+    @include responsive-xs {
+      background-position: center;
+      order: 0;
+    }
+
+    .la-header__shape {
+      width: 150px;
+      height: 150px;
+      padding: 20px;
+      background: $color-orange;
+      border: 1px solid $color-orange;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      position: absolute;
+      top: 70%;
+      left: -50px;
+
+      @include responsive-sm {
+        top: 90%;
+        left: 20px;
+      }
+      @include responsive-xs {
+        top: 80%;
+        left: 20px;
+      }
+
+      i {
+        color: $color-white;
+        border-radius: 50%;
+        border: 1px solid $color-white;
+      }
+
+      button {
+        text-align: left;
+        padding-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.la-nav__sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 8;
+  width: 100vw;
+  padding-top: 90px;
+  background-color: $color-white;
+  transition: 600ms $easeOutCirc;
+  overflow-x: hidden;
+
+  @include responsive-lg {
+    display: none;
+  }
+  @include responsive-md {
+    display: none;
+  }
+  @include responsive-sm {
+    display: none;
+  }
+
+  > a {
+    font-size: 18px;
+    line-height: 1;
+    display: block;
+    padding: 8px 8px 8px 32px;
+    user-select: none;
+
+    & ~ hr {
+      width: 90%;
+      padding-right: 10px;
+    }
+
+    &.la-nav__closebtn {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 35px;
+      cursor: pointer;
+    }
+  }
+
+  &.la-nav__sidebar--visible {
+    transform: translateX(-100vw) scale(1);
+  }
+
+  @include responsive-xs {
+    transition: transform $easeOutCirc 500ms;
+    width: 100vw;
+    right: 0;
+    transform: translateX(100vw);
+
+    // &--active {
+    //   transform: translateX(0);
+    // }
+  }
+}

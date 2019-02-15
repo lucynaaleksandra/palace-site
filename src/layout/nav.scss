@@ -1,0 +1,65 @@
+nav {
+  background: plum;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+
+  .la-nav__logo {
+    width: 80px;
+    height: 80px;
+    background-image: url("asset/logoGLD.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .la-nav__tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include responsive-xs {
+      display: none;
+    }
+
+    .la-nav__tab {
+      padding-right: 20px;
+    }
+  }
+
+  .la-nav__btn {
+    display: flex;
+    align-items: center;
+
+    @include responsive-xs {
+      display: none;
+    }
+  }
+
+  .la-nav__menu {
+    visibility: hidden;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+
+    @include responsive-xs {
+      visibility: visible;
+    }
+
+    &:focus {
+      & ~ .la-nav__sidebar {
+        transform: translateX(0);
+      }
+    }
+  }
+  // .la-nav__sidebar {
+  //   visibility: hidden;
+
+  //   @include responsive-xs {
+  //     visibility: visible;
+  //   }
+  // }
+}

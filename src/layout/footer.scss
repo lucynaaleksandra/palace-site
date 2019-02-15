@@ -1,0 +1,128 @@
+footer {
+  // background: plum;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+
+  // hr {
+  //   // opacity: 0.4;
+  // }
+
+  .la-footer__menu {
+    display: flex;
+    padding: 50px;
+
+    @include responsive-xs {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .la-footer__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 50px;
+
+      width: 80px;
+      height: 80px;
+      background-image: url("asset/logoGLD.png");
+      background-size: contain;
+      background-position: left;
+      background-repeat: no-repeat;
+
+      @include responsive-xs {
+        margin: 0 0 40px 0;
+      }
+    }
+
+    .la-footer__top {
+      display: flex;
+      justify-content: space-between;
+
+      @include responsive-xs {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      > div {
+        flex: 1 0 30%;
+      }
+
+      .la-footer__list {
+        font-size: 10px;
+      }
+
+      .la-footer__col-1,
+      .la-footer__col-2,
+      .la-footer__col-3 {
+        padding-top: 40px;
+      }
+
+      .la-footer__col-3 {
+        width: 25%;
+
+        @include responsive-xs {
+          width: 70%;
+          text-align: center;
+          align-self: center;
+        }
+
+        .la-footer__input {
+          position: relative;
+
+          input {
+            width: 250px;
+            padding: 12px 20px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            background: $color-grey-light;
+
+            @include responsive-sm {
+              width: 180px;
+            }
+            @include responsive-xs {
+              width: 180px;
+            }
+          }
+          .material-icons {
+            padding: 4px;
+            border-radius: 50%;
+            background: $color-orange;
+            color: $color-white;
+
+            position: absolute;
+            top: 7px;
+            left: 220px;
+
+            @include responsive-sm {
+              top: 8px;
+              left: 150px;
+              padding: 0;
+              font-size: 20px;
+            }
+            @include responsive-xs {
+              top: 4px;
+              left: 235px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .la-footer__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+
+    @include responsive-xs {
+      flex-direction: column;
+      align-items: center;
+      font-size: 10px;
+    }
+  }
+}
