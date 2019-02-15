@@ -1,5 +1,4 @@
 nav {
-  background: plum;
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
@@ -42,8 +41,10 @@ nav {
     display: flex;
     align-items: center;
     user-select: none;
+    color: $color-gold;
     outline: none;
     cursor: pointer;
+    @include hover-scale-01;
 
     @include responsive-xs {
       visibility: visible;
@@ -55,11 +56,4 @@ nav {
       }
     }
   }
-  // .la-nav__sidebar {
-  //   visibility: hidden;
-
-  //   @include responsive-xs {
-  //     visibility: visible;
-  //   }
-  // }
 }
