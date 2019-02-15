@@ -2,6 +2,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
+  color: $color-secondary;
+  font-size: 14px;
 
   .la-nav__logo {
     width: 80px;
@@ -23,25 +25,33 @@ nav {
 
     .la-nav__tab {
       padding-right: 20px;
+      @include hover-scale-01;
     }
   }
 
   .la-nav__btn {
     display: flex;
     align-items: center;
+    user-select: none;
+    @include hover-scale-01;
 
     @include responsive-xs {
       display: none;
+    }
+
+    .la-btn--clean,
+    i {
+      color: $color-secondary;
     }
   }
 
   .la-nav__menu {
     visibility: hidden;
-    font-size: 30px;
     display: flex;
     align-items: center;
-    user-select: none;
     color: $color-gold;
+    font-size: 30px;
+    user-select: none;
     outline: none;
     cursor: pointer;
     @include hover-scale-01;
