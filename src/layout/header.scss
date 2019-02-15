@@ -31,12 +31,7 @@ header {
       display: flex;
 
       button {
-        color: $color-secondary;
-        border: none;
-        margin-left: 5px;
-        outline: none;
-        cursor: pointer;
-        @include hover-scale-01;
+        margin-left: 15px;
       }
     }
   }
@@ -87,7 +82,8 @@ header {
       }
 
       button {
-        padding: 5px 0 0 0;
+        padding: 10px 10px 0 0;
+        margin-left: 0;
         background: $color-orange;
         color: $color-white;
       }
