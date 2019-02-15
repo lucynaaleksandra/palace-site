@@ -4,12 +4,14 @@ footer {
   font-size: 12px;
 
   hr {
-    // opacity: 0.4;
+    width: 100%;
+    opacity: 0.2;
   }
 
   .la-footer__menu {
     display: flex;
     padding: 50px;
+    justify-content: space-evenly;
 
     @include responsive-xs {
       flex-direction: column;
@@ -36,7 +38,6 @@ footer {
 
     .la-footer__top {
       display: flex;
-      justify-content: space-between;
 
       @include responsive-xs {
         flex-direction: column;
@@ -70,11 +71,17 @@ footer {
         }
 
         .la-footer__input {
-          position: relative;
+          display: flex;
+          align-items: center;
+
+          @include responsive-xs {
+            justify-content: center;
+          }
 
           input {
             width: 250px;
             padding: 12px 20px;
+            margin-right: 10px;
             border-radius: 20px;
             border: none;
             outline: none;
@@ -88,27 +95,9 @@ footer {
             }
           }
 
-          .material-icons {
-            padding: 4px;
-            border-radius: 50%;
-            background: $color-orange;
-            color: $color-white;
-
-            position: absolute;
-            top: 2px;
-            left: 220px;
-
-            @include responsive-sm {
-              top: 8px;
-              left: 150px;
-              padding: 0;
-              font-size: 20px;
-            }
-            @include responsive-xs {
-              top: 4px;
-              left: 235px;
-              font-size: 20px;
-            }
+          i {
+            display: inline;
+            padding: 7px;
           }
         }
       }

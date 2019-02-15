@@ -33,8 +33,8 @@
 
     &.la-nav__closebtn {
       position: absolute;
-      top: 15px;
-      right: 25px;
+      top: 25px;
+      right: 40px;
       font-size: 35px;
       cursor: pointer;
     }
@@ -49,9 +49,5 @@
     width: 100vw;
     right: 0;
     transform: translateX(100vw);
-
-    // &--active {
-    //   transform: translateX(0);
-    // }
   }
 }
