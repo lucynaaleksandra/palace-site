@@ -1,5 +1,6 @@
 .la-service {
-  background: plum;
+  background: $color-primary;
+  color: $color-white;
   min-height: 70vh;
   display: flex;
   position: relative;
@@ -30,6 +31,16 @@
 
     h4 {
       padding-bottom: 50px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .la-service__item {
+      padding: 10px 0;
+
+      h3 {
+        font-weight: 400;
+      }
     }
   }
 
@@ -61,7 +72,11 @@
     padding: 20px;
     background: $color-white;
     border: 1px solid $color-white;
+    box-shadow: $box-shadow;
+    color: $color-primary;
     font-size: 13px;
+    line-height: 1.2;
+    cursor: pointer;
 
     position: absolute;
     bottom: 10%;
