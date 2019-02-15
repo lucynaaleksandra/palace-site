@@ -26,9 +26,21 @@ header {
       padding: 50px;
     }
 
+    h1 {
+      opacity: 0;
+      animation: fade-up 3000ms $easeOutBack 500ms forwards;
+    }
+
+    p {
+      opacity: 0;
+      animation: fade-up 3000ms $easeOutBack 1000ms forwards;
+    }
+
     .la-header__btn {
       margin-top: 30px;
       display: flex;
+      opacity: 0;
+      animation: fade-up 3000ms $easeOutBack 1500ms forwards;
 
       button {
         margin-left: 15px;
@@ -43,6 +55,8 @@ header {
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
+    opacity: 0;
+    animation: fade 5000ms $easeOutBack 500ms forwards;
 
     @include responsive-sm {
       background-position: center;
@@ -69,6 +83,9 @@ header {
       top: 70%;
       left: -50px;
       cursor: pointer;
+
+      opacity: 0;
+      animation: scale-up 3000ms $easeOutBack 2200ms forwards;
 
       @include responsive-sm {
         top: 90%;
