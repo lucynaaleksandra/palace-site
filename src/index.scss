@@ -55,18 +55,47 @@ a {
 .la-btn {
   padding: 10px 20px;
   font-size: 14px;
-  border: none;
+  text-align: left;
   outline: none;
   user-select: none;
   cursor: pointer;
+  @include hover-scale-01;
 
   &--primary {
-    color: $color-primary;
+    padding: 0;
+    border: none;
+    color: $color-secondary;
   }
 
   &--secondary {
     border-radius: 25px;
     color: $color-orange;
     background: $color-orange-light;
+  }
+}
+
+.material-icons {
+  padding: 0;
+  font-size: 20px;
+  border-radius: 50%;
+  user-select: none;
+  cursor: pointer;
+  @include hover-scale-01;
+
+  &--clean {
+    color: $color-secondary;
+    border: none;
+  }
+
+  &--orange {
+    background: $color-orange;
+    color: $color-white;
+    border: 1px solid $color-white;
+  }
+
+  &--white {
+    background: $color-white;
+    color: $color-secondary;
+    border: 1px solid $color-secondary;
   }
 }
