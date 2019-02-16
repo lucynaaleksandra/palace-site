@@ -1,29 +1,29 @@
 #!/usr/bin/env node
 
-var Git = require("nodegit")
-var fs = require("fs")
-var exec = require("child_process").execSync
-var rimraf = require("rimraf")
+var Git = require("nodegit");
+var fs = require("fs");
+var exec = require("child_process").execSync;
+var rimraf = require("rimraf");
 
-var args = process.argv.slice(2)
-var dirname = args[0]
+var args = process.argv.slice(2);
+var dirname = args[0];
 
-console.log("::App Starter::")
+console.log("::App Starter::");
 
 if (!dirname || "string" !== typeof dirname || dirname.trim() === "") {
   console.log(
     "project name required.  example:",
     "npx app-starter my-new-project"
-  )
-  return process.exit(1)
+  );
+  return process.exit(1);
 }
 
 if (fs.existsSync(dirname)) {
-  console.log("project already exists:", dirname)
-  return process.exit(1)
+  console.log("project already exists:", dirname);
+  return process.exit(1);
 }
 
-console.log("creating ", dirname)
+console.log("creating ", dirname);
 
 // Git.Clone("https://github.com/ItsLeeOwen/app-starter.git", dirname)
 //   .then(function() {
