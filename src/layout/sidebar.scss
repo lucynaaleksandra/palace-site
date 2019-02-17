@@ -9,6 +9,9 @@
   transition: 600ms $easeOutCirc;
   overflow-x: hidden;
 
+  @include responsive-xl {
+    display: none;
+  }
   @include responsive-lg {
     display: none;
   }

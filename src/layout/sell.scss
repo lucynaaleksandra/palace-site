@@ -76,7 +76,7 @@
       background-size: contain;
       background-position: left;
       background-repeat: no-repeat;
-      @include will-animate-y(500ms);
+      @include will-animate-y(400ms);
 
       @include responsive-sm {
         order: 1;
@@ -96,7 +96,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 200px 0 0;
-    @include will-animate-y(1000ms);
+    @include will-animate-y(800ms);
 
     @include responsive-md {
       padding: 50px 0 50px 100px;

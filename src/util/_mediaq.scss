@@ -2,7 +2,14 @@ $break-xs: 400px;
 $break-sm: 700px;
 $break-md: 960px;
 $break-lg: 1140px;
-$break-xl: 1824px;
+$break-xl: 1680px;
+$break-xxl: 2300px;
+
+@mixin responsive-xl {
+  @media (min-width: $break-xl) and (max-width: $break-xxl) {
+    @content;
+  }
+}
 
 @mixin responsive-lg {
   @media (min-width: $break-lg) and (max-width: $break-xl) {

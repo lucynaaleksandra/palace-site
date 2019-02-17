@@ -48,7 +48,7 @@
       background-position: left;
       background-repeat: no-repeat;
       position: relative;
-      @include will-animate-y(500ms);
+      @include will-animate-y(400ms);
 
       @include responsive-sm {
         height: 500px;
@@ -91,7 +91,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      @include will-animate-y(1000ms);
+      @include will-animate-y(700ms);
 
       @include responsive-sm {
         padding: 0 100px 50px 100px;

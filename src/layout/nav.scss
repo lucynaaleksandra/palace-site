@@ -63,6 +63,10 @@ nav {
     opacity: 0;
     animation: fade 5000ms $easeOutBack 500ms forwards;
 
+    @include responsive-xl {
+      // display: none;
+      visibility: hidden;
+    }
     @include responsive-xs {
       visibility: visible;
     }
