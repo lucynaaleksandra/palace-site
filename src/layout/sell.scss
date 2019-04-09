@@ -26,6 +26,7 @@
     }
 
     .la-sell__btns {
+      font-size: 16px;
       display: flex;
       flex-direction: row;
 
@@ -35,7 +36,6 @@
       }
 
       button {
-        margin: 25px 25px 0 25px;
         color: $color-secondary;
 
         &:hover {
