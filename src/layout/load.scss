@@ -45,7 +45,7 @@
     @include will-animate-y(600ms);
 
     @include responsive-xs {
-      padding: 50px;
+      padding: 50px 25px;
     }
 
     h2 {

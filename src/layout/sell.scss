@@ -17,7 +17,7 @@
       width: 100%;
     }
     @include responsive-xs {
-      padding: 50px;
+      padding: 25px;
       width: 100%;
     }
 
@@ -63,7 +63,7 @@
     }
     @include responsive-xs {
       flex-direction: column;
-      padding: 0 50px 50px 50px;
+      padding: 0 25px 50px 25px;
     }
 
     > div {
@@ -105,7 +105,7 @@
       padding: 50px 100px;
     }
     @include responsive-xs {
-      padding: 50px;
+      padding: 25px;
     }
 
     h4 {

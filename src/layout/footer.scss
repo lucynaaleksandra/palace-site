@@ -18,6 +18,7 @@ footer {
     @include responsive-xs {
       flex-direction: column;
       align-items: center;
+      padding: 50px 25px;
     }
 
     .la-footer__logo {

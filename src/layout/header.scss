@@ -23,7 +23,7 @@ header {
     }
     @include responsive-xs {
       order: 1;
-      padding: 50px;
+      padding: 50px 25px;
     }
 
     h1 {
